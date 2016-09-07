@@ -1,0 +1,64 @@
+.main-container{
+  width: 85%;
+  //background-color: #efefef;
+  margin: 0 auto;
+}
+
+
+#h-image{
+  width: 100%;
+  height: 400px;
+  background-image: url('../assets/img/header_bg.png');
+  background-size: contain;
+  background-position: center;
+}
+
+#h-title{
+  text-align: center;
+  font-family: 'Cantarell', sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  letter-spacing: 10px;
+  border-bottom: 1px solid #ededed;
+  padding: 10px 0px;
+
+  #field{
+    color: gray;
+  }
+}
+
+#h-description{
+  border-bottom: 1px solid #ededed;
+  padding: 40px 0;
+  p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+#portfolio_tease{
+  width: 100%;
+  border-bottom: 1px solid #ededed;
+  padding: 40px 0px;
+  overflow: hidden;
+  ul  {
+    li {
+      display: block;
+      width: 33.33%;
+      height: 250px;
+      background-color: papayawhip;
+      float: left;
+      text-align: center;
+      line-height: 250px;
+
+      &:hover{
+        background-color: beige;
+      }
+    }
+
+  }
+}

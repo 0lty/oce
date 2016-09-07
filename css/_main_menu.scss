@@ -1,0 +1,36 @@
+#main_menu{
+  width: 100%;
+  //background: pink;
+  height: 200px;
+  border-bottom: 1px solid #ededed;
+
+  ul{
+    position: relative;
+    top: 170px;
+    li {
+      display: block;
+      float: right;
+      a{
+        text-decoration: none;
+        display: block;
+        width: 70px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        margin: 0 0 0 10px;
+        border-bottom: 1px solid rgba(166,166,166,0.27);
+
+        &:hover{
+          -moz-box-shadow: inset -5px 13px 51px -5px rgba(166,166,166,0.27);
+          -webkit-box-shadow: inset -5px 13px 51px -5px rgba(166,166,166,0.27);
+          box-shadow: inset -5px 13px 51px -5px rgba(166,166,166,0.27);
+          border-bottom: 1px solid rgba(166,166,166,0.4);
+        }
+      }
+    }
+
+  }
+
+}

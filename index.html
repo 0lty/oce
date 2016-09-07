@@ -1,23 +1,36 @@
 ---
-layout: default
+layout: main
 ---
 
-<div class="home">
+{% include main_menu.html %}
 
-  <h1 class="page-heading">Posts</h1>
+<div class="header-index">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <div id="h-image"></div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <div id="h-title">
+    <span id='name'>CORNEL OLTEANU</span><span id='field'> GIS</span><span id='title'>SPECIALIST</span>
+  </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <div id="h-description">
+    <p>
+      I’m a freelance GIS Specialist who’s delivered creative and engaging solutions.
+GIS Specialist with nearly five years of experience with ArvGis software for developing GIS databases as well as ArcEditor data creation/editing tools and snapping tolerances.
+Continuously look at ways to add value to take the initiative in improving proceses and identifying business opportunities. Excelent working knowledge of Excel.
+    </p>
+  </div>
 
+  <div id="portfolio_tease">
+    <ul>
+      <li>unu</li>
+      <li>doi</li>
+      <li>trei</li>
+      <li>patru</li>
+      <li>cinci</li>
+      <li>sase</li>
+    </ul>
+  </div>
+
+
+{% include footer.html %}
 </div>
