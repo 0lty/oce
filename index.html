@@ -1,37 +1,23 @@
 ---
-layout: main
+layout: default
 ---
 
 <div class="home">
-  {%include menu.html%}
 
-  <div class="header-container">
+  <h1 class="page-heading">Posts</h1>
 
-    <div id="hero-header"></div>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-    <div id="title_header">
-      <h1><span id ='name'>Cornel Olteanu</span><span id='pos'> GIS</span><span id='title'>Specialist</span></h1>
-    </div>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-    <div id="about_me">
-      <p>
-        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
-      </p>
-    </div>
-
-    <div id="port_images">
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-      </ul>
-
-    </div>
-
-  </div>
-
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
