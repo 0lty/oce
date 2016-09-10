@@ -30,7 +30,11 @@
         }
       }
     }
-
   }
+}
 
+#active_menu{
+    -moz-box-shadow: inset -5px 13px 27px -7px rgba(193, 174, 144, 0.27);
+    -webkit-box-shadow: inset -5px 13px 27px -7px rgba(193, 174, 144, 0.27);
+    box-shadow: inset -5px 13px 27px -7px rgba(193, 174, 144, 0.27);
 }
