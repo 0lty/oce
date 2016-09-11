@@ -1,0 +1,36 @@
+.contact-col{
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  margin-top: 50px;
+  padding: 50px;
+  font-family: 'Quicksand', sans-serif;
+  color: #464646;
+
+  h1{
+    font-size: 3.2em;
+    margin-bottom: 20px;
+  }
+
+  p{
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+    line-height: 1.4em;
+  }
+  a{
+    text-decoration: none;
+    color: #ED2121;
+  }
+
+  img{
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-col{
+    width: 100%;
+    padding: 50px 10px;
+  }
+}

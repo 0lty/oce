@@ -3,6 +3,6 @@
     <li><a href="contact.html" {% if page.url == "/contact.html" %}id="active_menu"{% endif %}>Contact</a></li>
     <li><a href="cv.html" {% if page.url == "/cv.html" %}id="active_menu"{% endif %}>CV</a></li>
     <li><a href="gis.html" {% if page.url == "/gis.html" %}id="active_menu"{% endif %}>GIS</a></li>
-    <li><a href="/" {% if page.url == "/" %}id="active_menu"{% endif %}>Home</a></li>
+    <li><a href="/" {% if page.url == "/{{site.baseurl}}" %}id="active_menu"{% endif %}>Home</a></li>
   </ul>
 </div>
