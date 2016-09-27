@@ -101,10 +101,11 @@
 }
 
 .section-thumbnail{
-  width: 40%;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background: red;
   float: left;
+  border-radius: 50%;
 }
 
 .section-child{
@@ -113,20 +114,51 @@
 }
 
 .section-about{
+  font-family: 'EB Garamond', serif;
   font-size: 16px;
   width: 60%;
   height: 200px;
   float: left;
+
+  .app-title{
+    font-weight: bold;
+    color: #464646;
+    font-size: 1.4em;
+  }
+
+  .app-info{
+    padding: 0 20px;
+  }
+
   ul{
-    margin: 50px 0 0 0;
+    margin: 5px 0 0 0;
     padding: 0 0 0 20px;
     li{
-      //background: pink;
-      display: block;
-      height: 30px;
-      margin: 0;
-      padding: 0;
-      width: 100%
+      display: inline-block;
+      margin: 5px 0;
+      width: 100%;
     }
   }
+
+}
+
+
+@media (max-width: 800px) {
+  .section-thumbnail{
+    float: inherit;
+    margin: 0 auto;
+  }
+
+  .section-about{
+    width: 100%;
+    ul{
+      padding: 0;
+      border-bottom: 1px solid #ededed;
+      width: 100%;
+      .app-title{
+          text-align: center;
+      }
+    }
+  }
+
 }

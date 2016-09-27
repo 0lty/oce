@@ -7,7 +7,7 @@ layout: main
 
   <div class="action-section">
     <div class="section-image">
-      <a href="#waps" class='click-gis'><img src="{{site.baseurl}}/assets/img/gis/apps_btn.png" alt="" /></a>
+      <a href="#waps" class='click-gis webapss-show'><img src="{{site.baseurl}}/assets/img/gis/apps_btn.png" alt="" /></a>
     </div>
 
     <div class="section-title">
@@ -22,7 +22,7 @@ layout: main
 
   <div class="action-section">
     <div class="section-image">
-      <a href="#maps" class='click-gis'><img src="{{site.baseurl}}/assets/img/gis/maps_btn.png" alt="" /></a>
+      <a href="#maps" class='click-gis maps-show'><img src="{{site.baseurl}}/assets/img/gis/maps_btn.png" alt="" /></a>
     </div>
 
     <div class="section-title">
@@ -37,7 +37,7 @@ layout: main
 
   <div class="action-section">
     <div class="section-image">
-      <a href="#db" class='click-gis'><img src="{{site.baseurl}}/assets/img/gis/db_btn.png" alt="" /></a>
+      <a href="#db" class='click-gis db-show'><img src="{{site.baseurl}}/assets/img/gis/db_btn.png" alt="" /></a>
     </div>
 
     <div class="section-title">
@@ -51,7 +51,7 @@ layout: main
   </div>
 </div>
 
-<div class="section-container">
+<div class="section-container webapps">
   <span><a name='waps'>WebApps</a></span>
   <div class="section-body">
     <div class="section-child">
@@ -60,9 +60,10 @@ layout: main
       </div>
       <div class="section-about">
         <ul>
-          <li>title|owner</li>
-          <li>description</li>
-          <li>visit</li>
+          <li class="app-title">Old Bucharest</li>
+          <li class="app-info">An application that reveals the areas of high risk buildings in case of an earthquake of medium / high intensity.</li>
+          <li class="app-info">The application is developed using the technical expertise to assess buildings suitability.</li>
+          <li class="app-info">Official data can be found on: <a href="http://www.mdrap.ro/constructii/siguranta-post-seism-a-cladirilor/programe-de-prevenire-a-riscului-seismic/-8247/-9738">mdrap.ro</a> and <a href="http://www.pmb.ro/services/alte_informatii/lista_imobilelor_exp/docs/Lista_imobilelor_expertizate.pdf">pmb.ro</a></li>
         </ul>
       </div>
     </div>
@@ -73,9 +74,37 @@ layout: main
       </div>
       <div class="section-about">
         <ul>
-          <li>title|owner</li>
-          <li>description</li>
-          <li>visit</li>
+          <li class="app-title">Food&amp;Drink Turnu-Măgurele</li>
+          <li class="app-info">The main locations where you can relax when you are visiting Turnu Magurele.</li>
+          <li class="app-info">In a pleasant ambiance you can find a wide range of Romanian and International dishes.</li>
+          <li class="app-info">The information was colected in March 2016, from the field.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-child">
+      <div class="section-thumbnail">
+
+      </div>
+      <div class="section-about">
+        <ul>
+          <li class="app-title">24/7</li>
+          <li class="app-info">Do you want to find a 24/7 place in <strong>Bucharest</strong>? Now you can.</li>
+          <li class="app-info">The application shows all the non stops in Bucharest and it’s a Leaflet product.</li>
+          <li class="app-info">The application is developed using all the non stop data from websites. Last update was in February 2016.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-child">
+      <div class="section-thumbnail">
+      </div>
+      <div class="section-about">
+        <ul>
+          <li class="app-title">Flood Areas in Turnu Magurele</li>
+          <li class="app-info">An application that reveals areas of high flood risk.</li>
+          <li class="app-info">The application is developed using digital elevation model and flow rivers.</li>
+          <li class="app-info">It`s more like a scenario, to see what will happen if there is an increase with 10cm in the rivers.</li>
         </ul>
       </div>
     </div>
@@ -83,7 +112,7 @@ layout: main
   </div>
 </div>
 
-<div class="section-container">
+<div class="section-container maps">
   <span><a name='maps'>Maps</a></span>
   <div class="section-body">
     <div id="portfolio_tease">
@@ -121,10 +150,51 @@ layout: main
   </div>
 </div>
 
-<div class="section-container">
+<div class="section-container db">
   <span><a name='db'>DataBase</a></span>
   <div class="section-body">
 
+    <div class="section-child">
+      <div class="section-thumbnail">
+      </div>
+      <div class="section-about">
+        <ul>
+          <li class="app-title">Street</li>
+          <li class="app-info">This data show the outline of all streets located in Turnu-Măgurele, Romania.(2016)</li>
+          <li class="app-info">The shapefile format spatially describes geometries as  polyline.</li>
+          <li class="app-info">Each geometry has a set of associated attributes. Broadly speaking these are a bit like osm's tags.</li>
+          <li class="app-info">EPSG = 3844</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-child">
+      <div class="section-thumbnail">
+      </div>
+      <div class="section-about">
+        <ul>
+          <li class="app-title">Building</li>
+          <li class="app-info">This data show the outline of all buildings located in Turnu-Măgurele, Romania.(2009)</li>
+          <li class="app-info">The shapefile format spatially describes geometries as polygons.</li>
+          <li class="app-info">Each geometry has a set of associated attributes. Broadly speaking these are a bit like osm's tags.</li>
+          <li class="app-info">EPSG = 3844</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-child">
+      <div class="section-thumbnail">
+      </div>
+      <div class="section-about">
+        <ul>
+          <li class="app-title">Trees</li>
+          <li class="app-info">This data show the footprint of all trees located in Turnu-Măgurele, Romania.(2016)</li>
+          <li class="app-info">The shapefile format spatially describes geometries as points.</li>
+          <li class="app-info">Each geometry has a set of associated attributes.</li>
+          <li class="app-info">EPSG = 3844</li>
+        </ul>
+      </div>
+    </div>
 
   </div>
 </div>
