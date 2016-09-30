@@ -57,6 +57,8 @@
 }
 
 
+
+
 @media (max-width: 700px) {
   .action-section{
     clear: both;
@@ -103,14 +105,43 @@
 .section-thumbnail{
   width: 150px;
   height: 150px;
-  background: red;
   float: left;
   border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+}
+
+.section-thumbnail.old{
+  background-image: url("../assets/img/icons/ic_3.png");
+}
+.section-thumbnail.food{
+  background-image: url("../assets/img/icons/ic_2.png");
+}
+.section-thumbnail.seven{
+  background-image: url("../assets/img/icons/ic_4.png");
+}
+.section-thumbnail.turnu{
+  background-image: url("../assets/img/icons/ic_1.png");
+}
+.section-thumbnail.street{
+  background-image: url("../assets/img/icons/ic_5.png");
+}
+.section-thumbnail.building{
+  background-image: url("../assets/img/icons/ic_6.png");
+}
+.section-thumbnail.trees{
+  background-image: url("../assets/img/icons/ic_7.png");
 }
 
 .section-child{
   clear: both;
   padding: 10px;
+
+  .section-link{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .section-about{
@@ -124,10 +155,21 @@
     font-weight: bold;
     color: #464646;
     font-size: 1.4em;
+    font-style: italic;
+    a{
+      text-decoration: none;
+      color: #464646;
+      &:visited{
+        color: #464646;
+      }
+      &:hover{
+        color: #7d7c7c;
+      }
+    }
   }
 
   .app-info{
-    padding: 0 20px;
+    color: #464646;
   }
 
   ul{
