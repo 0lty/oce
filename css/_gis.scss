@@ -202,5 +202,112 @@
       }
     }
   }
+}
 
+
+
+
+.front_thumbnail2{
+  max-width: 180px;
+  border: 4px solid #f5f5f5;
+  margin: 5px;
+
+  &:hover{
+    border: 4px solid #e8e7e7;
+    -webkit-box-shadow: 10px 10px 62px -16px rgba(199,199,199,1);
+    -moz-box-shadow: 10px 10px 62px -16px rgba(199,199,199,1);
+    box-shadow: 10px 10px 62px -16px rgba(199,199,199,1);
+  }
+}
+
+@media (max-width: 1080px) {
+  .front_thumbnail2{
+    max-width: 160px;
+  }
+}
+
+@media (max-width: 970px) {
+  .front_thumbnail2{
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 860px) {
+  .front_thumbnail2{
+    max-width: 125px;
+  }
+}
+
+@media (max-width: 785px) {
+  .front_thumbnail2{
+    max-width: 100px;
+    margin: 2px;
+  }
+}
+
+@media (max-width: 625px) {
+  .front_thumbnail2{
+    max-width: 80px;
+    margin: 2px;
+  }
+}
+
+@media (max-width: 520px) {
+
+
+  .front_thumbnail2{
+    max-width: 70px;
+    margin: 2px;
+  }
+
+  .main-container{
+    width: 95%;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .front_thumbnail2{
+    max-width: 60px;
+  }
+
+.section-title{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+.section-image{
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+.section-child{
+  display: block;
+  position: relative;
+  padding-bottom: 30px;
+  height: 350px;
+}
+
+.click-gis{
+  width: 100px;
+  height: 100px;
+}
+
+}
+
+
+@media (max-width: 380px) {
+
+  .front_thumbnail2{
+    max-width: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .front_thumbnail2{
+    max-width: 45px;
+  }
 }

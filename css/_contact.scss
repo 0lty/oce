@@ -1,167 +1,93 @@
-.contact-col{
-  width: 100%;
+.contact-left{
+  padding-top: 60px;
+  width: 55%;
+  display: block;
   float: left;
-  box-sizing: border-box;
-  margin-top: 50px;
-  padding: 50px;
+  height: auto;
   font-family: 'Quicksand', sans-serif;
   color: #464646;
-
   h1{
-    font-size: 3.2em;
-    margin-bottom: 20px;
+    font-size: 1.8em;
+    margin-bottom: 15px;
   }
 
   p{
+    margin: 5px 0;
     font-family: 'EB Garamond', serif;
-    font-size: 1.2em;
-    line-height: 1.4em;
-    padding-top: 26px;
-  }
-  a{
-    text-decoration: none;
-    color: #ED2121;
-  }
-
-  img{
-    width: 45px;
-    height: 45px;
-    margin: 20px;
-  }
-}
-
-#the-man{
-  width: 200px;
-  height: 200px;
-  // display: inline-block;
-  float: left;
-}
-
-.contacts{
-  clear: both;
-  max-width: 800px;
-  margin: 25px auto;
-  // background: pink;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: bold;
-  color: #464646;
-  font-size: 1.6em;
-  height: 100px;
-  text-align: center;
-  position: relative;
-  .left-cnt{
-    text-align: left;
-    position: absolute;
-    line-height: 100px;
-    width: 70%;
-    right: 0;
-    height: 100px;
-  }
-
-  .right-cnt{
-    position: absolute;
-    line-height: 100px;
-    width: 28%;
-    left: 0;
-    height: 100px;
-  }
-}
-
-.right-cnt.mail{
-  background-image: url("../assets/img/mail.png");
-  background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat;
-}
-.right-cnt.phone{
-  background-image: url("../assets/img/phone.png");
-  background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 650px) {
-  .contacts{
-    font-size: 1.6em;
-    .left-cnt{width: 80%;}
-    .right-cnt{width: 18%;}
-  }
-}
-
-@media (max-width: 560px) {
-  .contact-col{
-    #the-man{
-      display: block;
-      float: none;
-      margin: 10px auto;
-    }
-    p{
-      width: 100%;
-      clear: both;
-    }
-    h1{
-      text-align: center;
-    }
-  }
-  .contacts{
-    font-size: 1.4em;
-    .left-cnt{width: 80%;}
-    .right-cnt{width: 18%;}
-  }
-}
-
-@media (max-width: 500px) {
-  .contacts{
-    font-size: 1em;
-    .left-cnt{width: 80%;}
-    .right-cnt{width: 18%;}
+    font-size: 1.1em;
   }
 }
 
 
-.small-contacts{
+.contact-right{
+  padding-top: 60px;
+  width: 40%;
   display: block;
-  background: #e6e6e6;
-  max-width: 400px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 20px 0px;
-  margin-bottom: 50px;
-  h1 {
-    font-family: 'Quicksand', sans-serif;
-    font-style: italic;
-    font-size: 1.6em;
-    color: #464646;
+  float: right;
+  img{
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
   }
-  .little-buttons{
+}
+
+.cta{
+  clear: both;
+ padding-top: 50px;
+  margin: 0px 0 100px 0 ;
+  position: relative;
+  ul{
+    margin: 10px 0;
+  }
+  li{
+    vertical-align:top;
+    color: #464646;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    margin: 10px;
+    display: inline-block;
     height: 50px;
-    margin-bottom: 20px;
-    a{
-      display: inline-block;
-      height: 50px;
-      width: 50px;
-      background-color: pink;
-    }
+    line-height: 50px;
+    padding: 0;
+    margin: 0 10px;
+  }
+}
+.box{
+  height: 40px;
+  width: 40px;
+  line-height: 50px;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.unu{
+  background-image: url("../assets/img/icons/m_i.png");
+}
+.doi{
+  background-image: url("../assets/img/icons/ph_i.png");
+}
+.trei{
+  background-image: url("../assets/img/icons/fb_i.png");
+}
+.patru{
+  background-image: url("../assets/img/icons/in_i.png");
+}
 
-    #contact-fb{
-      background-image: url("../assets/img/face_btn.png");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    #contact-in{
-      background-image: url("../assets/img/linked_btn.png");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    #contact-gp{
-      background-image: url("../assets/img/google_btn.png");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-
+.social-box{
+  display: block;
+  width: 250px;
+  height: 100px;
+  background: #fbfbfb;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.2em;
+  padding: 5px 0;
+  p{
+    margin-top: 10px;
   }
 }
