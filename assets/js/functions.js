@@ -5,7 +5,7 @@ $(document).ready(function() {
   $('.section-container.maps').hide();
   $('.section-container.db').hide();
 
-  $('.click-gis.webapss-show').click(function() {
+  $('.w-show').click(function() {
       $('.section-container.maps').hide();
       $('.section-container.db').hide();
       $('.section-container.webapps').slideDown();
@@ -15,7 +15,7 @@ $(document).ready(function() {
     }, 1000);
   });
 
-  $('.click-gis.maps-show').click(function() {
+  $('.m-show').click(function() {
       $('.section-container.webapps').hide();
       $('.section-container.db').hide();
       $('.section-container.maps').slideDown();
@@ -25,7 +25,7 @@ $(document).ready(function() {
     }, 1000);
   });
 
-  $('.click-gis.db-show').click(function() {
+  $('.db-show').click(function() {
       $('.section-container.maps').hide();
       $('.section-container.webapps').hide();
       $('.section-container.db').slideDown();
