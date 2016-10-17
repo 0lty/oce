@@ -20,10 +20,10 @@ img{
 
 #h-title{
   text-align: center;
-  font-family: 'Matrix', sans-serif;
-  font-weight: 400;
+  font-family: 'Gtek';
+  color: $grey-color;
   font-size: 2em;
-  letter-spacing: 10px;
+  // letter-spacing: 10px;
   border-bottom: 1px solid #ededed;
   padding: 10px 0px;
 
@@ -36,7 +36,7 @@ img{
   border-bottom: 1px solid #ededed;
   padding: 40px 0;
   p{
-    font-family: 'Architec', sans-serif;
+    font-family: 'Charakterny', sans-serif;
     font-size: 1.2em;
     line-height: 1.4em;
     max-width: 600px;

@@ -4,6 +4,8 @@
 @charset "utf-8";
 @font-face { font-family: Matrix; src: url('../assets/fonts/MATRIX.ttf'); }
 @font-face { font-family: Architec; src: url('../assets/fonts/ARCHITEC.TTF'); }
+@font-face { font-family: Charakterny; src: url('../assets/fonts/Charakterny.otf'); }
+@font-face { font-family: Gtek; src: url('../assets/fonts/Gtek_Technology.ttf') format('truetype'); }
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -33,7 +35,11 @@ body{
   font-size: 16px;
 }
 
-p, span, .action-section, .section-about, .cv-containter, ul, h1, h2, h3{
+.section-about, .cv-containter, {
+  background-color: rgba(255, 255, 255, 0.39);
+}
+
+p, span, ul, h1, h2, h3, .action-section{
   background-color: white;
 }
 // Minima also includes a mixin for defining media queries.
